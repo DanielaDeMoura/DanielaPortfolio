@@ -10,8 +10,14 @@ body {
     place-items: center;
 }
 
-.card {
-    box-shadow: 0 0 20px #D8798F;
+nav {
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    height: 100%;
+}
+
+.intro {
     width: 80%;
     max-width: 600px;
     display: flex;
@@ -25,7 +31,15 @@ body {
 .pfp {
     border-radius: 100%;
     border: 3px solid #D8798F;
-    size-adjust: auto;
+    max-width: 80%;
+    height: auto;
+}
+
+.profile-main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }
 
 .profile-name {
@@ -45,7 +59,7 @@ body {
 
 }
 
-.profile-position {
+.job-title {
     margin: 0;
     font-size: auto;
     letter-spacing: 1px;
@@ -54,12 +68,12 @@ body {
     font-weight: bold;
 }
 
-.profile-body {
+.about {
     font-weight: lighter;
 }
 
 @media (min-width: 600px){
-    .card {
+    .intro {
         flex-direction: row;
     }
 
