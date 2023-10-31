@@ -10,12 +10,23 @@ body {
     place-items: center;
 }
 
-nav {
-    position: absolute;
-    top: 0%;
-    bottom: 0%;
+/* For large screens (PC) */
+.nav-vertical {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 8px; /* Adjust the width of the line as needed */
     height: 100%;
+    background-color: #D8798F;
+  }
+ 
+.nav-vertical ul{
+    list-style: none;
+    padding: 0;
 }
+
+  
 
 .intro {
     width: 80%;
@@ -88,6 +99,7 @@ nav {
     color: #613c45;
     font-weight: bold;
     margin: 1em;
+    text-align: center;
 }
 
 .photo-grid {
@@ -117,12 +129,19 @@ nav {
     color: white;
     position: absolute;
     bottom: 0;
+    left: 0;
     width: 100%;
     padding: 0.5%;
     align-items: center;
   }
+
+section {
+    text-align: center;
+}
   
 @media (min-width: 600px) {
+
+
     .intro {
         flex-direction: row;
     }
@@ -145,3 +164,22 @@ nav {
         margin: 0 2em 0 0;
     }
 }
+
+
+    /* For small screens (mobile) */
+  @media (max-width: 600px) {
+    .nav-vertical {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .nav-vertical ul {
+      list-style-type: none;
+      display: flex;
+    }
+    .nav-vertical li {
+      margin: 0 10px;
+    }
+  }
+  
