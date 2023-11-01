@@ -1,74 +1,66 @@
-/* {
-    box-sizing: border-box;
-} */
+/* Frosted glass effect - Applies to the background overlay */
+body::before {
+    content: "";
+    background: inherit;
+    filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
 
+/* Styling for the body element */
 body {
     font-family: sans-serif;
     line-height: 1.4;
     min-height: 100vh;
     display: grid;
     place-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    /* Frosty background */
 }
 
-/* For large screens (PC) 
-.nav-vertical {
-    display: flex;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 8px; /* Adjust the width of the line as needed 
-    height: 100%;
-    background-color: #D8798F;
-  }
- 
-.nav-vertical ul{
-    list-style: none;
-    padding: 0;
-} */
+/* Styling for the navigation bar */
 .nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-/* Style for individual links */
-.nav-vertical a {
+/* Styling for navigation links */
+.nav-v a {
     float: left;
     color: #ca8d8d;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px;
     text-decoration: none;
     font-size: 17px;
 }
 
-.nav-vertical a:hover {
+/* Hover effect for navigation links */
+.nav-v a:hover {
     background-color: #ddd;
     color: black;
 }
 
+/* Styling for list items in the navigation */
 li {
-/*    display: inline-block;
-    margin-right: 20px; */
+    display: inline-block;
+    margin-right: 20px;
     position: relative;
     list-style: none;
 }
 
-li::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 5px;
-    height: 100%;
-    background-color: #D8798F;
- 
-}
-
+/* Styling for anchor tags within list items */
 li a {
     text-decoration: none;
     color: #613c45;
     text-transform: uppercase;
 }
 
+/* Styling for the introduction section */
 .intro {
     width: 80%;
     max-width: 600px;
@@ -78,8 +70,10 @@ li a {
     color: indianred;
     text-align: center;
     padding: 2em;
+    border-radius: 9px;
 }
 
+/* Styling for the profile picture */
 .pfp {
     border-radius: 100%;
     border: 3px solid #D8798F;
@@ -87,6 +81,7 @@ li a {
     height: auto;
 }
 
+/* Styling for the profile main section */
 .profile-main {
     display: flex;
     align-items: center;
@@ -94,11 +89,13 @@ li a {
     flex-direction: column;
 }
 
+/* Styling for the profile name */
 .profile-name {
     letter-spacing: 1.4px;
     font-size: 2rem;
 }
 
+/* Styling for the line under the profile name */
 .profile-name::after {
     content: "";
     display: block;
@@ -108,9 +105,9 @@ li a {
     margin: 2% auto -2% auto;
     place-items: center;
     opacity: 50%;
-
 }
 
+/* Styling for job title */
 .job-title {
     margin: 0;
     font-size: auto;
@@ -120,52 +117,69 @@ li a {
     font-weight: bold;
 }
 
+/* Styling for the "about" section */
 .about {
     font-weight: lighter;
 }
 
+/* Styling for the YouTube video section */
 .vid-youtube {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
 
+/* Styling for the embedded YouTube iframe */
 .vid-youtube iframe {
     width: 560px;
     height: 315px;
 }
 
-.vid-caption {
+/* Styling for heading level 3 */
+h3 {
     color: #613c45;
     font-weight: bold;
     margin: 1em;
     text-align: center;
 }
 
+/* Styling for the photo grid section */
 .photo-grid {
+    max-width: 80%;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 20px;
-  }
-  
-  .grid-item {
+}
+
+/* Hover effect for grid images */
+.grid-item {
     position: relative;
     text-align: center;
     padding: 5px;
-  }
-  
-  .grid-item img {
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+/* Styling for images within grid items */
+.grid-item img {
     width: 100%;
     max-height: 100%;
     height: auto;
     display: block;
-    border: 4px solid #4c04209b; /* image border */
     object-fit: cover;
-  }
-  
-  .caption {
+    transition: transform 0.3s;
+}
+
+/* Styling for captions in the grid */
+.caption {
     background-color: #613c45aa;
     color: white;
     position: absolute;
@@ -175,51 +189,97 @@ li a {
     padding: 0.5%;
     align-items: center;
     word-wrap: break-word;
-  }
+}
 
-section {
+/* Hover effect for grid items */
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+/* Hover effect for images within grid items */
+.grid-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Styling for various sections, headings, and paragraphs */
+section,
+.h2o,
+h1 {
     text-align: center;
 }
-  
+
+/* Styling for generic sections */
+section {
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Styling for the "Projects" heading */
+h1 {
+    font-size: 2rem;
+    color: #613c45;
+    margin: 1em 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline #613c45;
+}
+
+/* Styling for heading 2 */
+.h2o {
+    color: #613c45;
+    /* Heading color */
+    font-size: 1.7rem;
+}
+
+/* Styling for paragraphs */
+p {
+    font-size: 1.1rem;
+    /* Paragraph font size */
+    color: #4c0420;
+    /* Paragraph text color */
+}
+
+/* Styling for anchor links */
+a {
+    color: #D8798F;
+    /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hover effect for anchor links */
+a:hover {
+    text-decoration: underline;
+    /* Add underline on hover for links */
+}
+
+/* Media query for larger screens */
 @media (min-width: 600px) {
 
-
+    /* Adjustments for the introduction section */
     .intro {
         flex-direction: row;
     }
 
+    /* Adjustments for the profile main section */
     .profile-main {
         text-align: left;
         margin-left: 2em;
     }
 
+    /* Adjustments for the line under the profile name */
     .profile-name::after {
         margin-left: 0;
     }
 
+    /* Adjustments for the YouTube video section */
     .vid-youtube {
         flex-direction: row;
         justify-content: center;
     }
-
-    .vid-caption {
-        margin: 0 2em 0 0;
-    }
 }
-
-  /* For small screens (mobile) */
- /* @media (max-width: 600px) {
-    .nav-vertical {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-    .nav-vertical ul {
-      list-style-type: none;
-      display: flex;
-    }
-    .nav-vertical li {
-      margin: 0 10px;
-    }
-  } */

@@ -44,3 +44,9 @@ The CV section, all the main sections with a pink underline, the video section, 
 HTML is named index.html.
 
 CSS is stored under assets.
+
+## Design Process:
+
+This was my original vision for my website. Sadly due to time constraints and skill-level I had to abandon my original plan. I tried to keep it as close as the original by maintaining the same colour scheme and other aspects of the theme such as a sans-serif font.
+
+![mobile telephone wireframe](wireframes1.png) ![large screen wireframe such as laptop and desktop computer](wireframes2.png)
