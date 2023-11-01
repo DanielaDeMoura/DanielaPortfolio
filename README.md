@@ -26,3 +26,21 @@ Daniela A. Mendes Penelas De Moura
 www.danielamoura.com
 
 For more information on copyright acts and related laws, you can visit the [official government page](https://www.gov.uk/government/publications/copyright-acts-and-related-laws).
+
+# Use Guide:
+
+## What has links?
+
+The CV section, all the main sections with a pink underline, the video section, and the t-shirt image.
+
+# Photos of the website:
+
+![screenshot of website](readimg5.png)
+
+![screenshot of website](readimg2.png) ![screenshot of website](readimg3.png) ![screenshot of website](readimg4.png)
+
+## Files:
+
+HTML is named index.html.
+
+CSS is stored under assets.
