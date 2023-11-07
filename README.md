@@ -49,4 +49,8 @@ CSS is stored under assets.
 
 This was my original vision for my website. Sadly due to time constraints and skill-level I had to abandon my original plan. I tried to keep it as close as the original by maintaining the same colour scheme and other aspects of the theme such as a sans-serif font.
 
+<<<<<<< HEAD
 ![mobile telephone wireframe](readme_img/wireframes1.png) ![large screen wireframe such as laptop and desktop computer](readme_img/wireframes2.png)
+=======
+![mobile telephone wireframe](wireframes1.png) ![large screen wireframe such as laptop and desktop computer](wireframes2.png)
+>>>>>>> 3982012fac82d3a348f51e931145bf0f0c943031
