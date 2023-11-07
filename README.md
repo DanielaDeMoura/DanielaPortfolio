@@ -35,9 +35,9 @@ The CV section, all the main sections with a pink underline, the video section, 
 
 # Photos of the website:
 
-![screenshot of website](readimg5.png)
+![screenshot of website](readme_img/readimg5.png)
 
-![screenshot of website](readimg2.png) ![screenshot of website](readimg3.png) ![screenshot of website](readimg4.png)
+![screenshot of website](readme_img/readimg2.png) ![screenshot of website](readme_img/readimg3.png) ![screenshot of website](readme_img/readimg4.png)
 
 ## Files:
 
@@ -49,4 +49,4 @@ CSS is stored under assets.
 
 This was my original vision for my website. Sadly due to time constraints and skill-level I had to abandon my original plan. I tried to keep it as close as the original by maintaining the same colour scheme and other aspects of the theme such as a sans-serif font.
 
-![mobile telephone wireframe](wireframes1.png) ![large screen wireframe such as laptop and desktop computer](wireframes2.png)
+![mobile telephone wireframe](readme_img/wireframes1.png) ![large screen wireframe such as laptop and desktop computer](readme_img/wireframes2.png)
